@@ -1,0 +1,6 @@
+FROM node
+RUN ls
+RUN mkdir -p /usr/src/app
+COPY /bin/www /usr/src/app
+EXPOSE 3001
+CMD [ "node", "/usr/src/app/index" ]
